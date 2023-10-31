@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Room_Rock&Scissor&Paper</title>
+        <meta charset="utf-8">
+        <script src ="functions.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <input type="button" id="theme" value="night" onclick = "
+            nightDayHandler(this);
+        ">
+        <h1><a href="index.html">WEB</a></h1>
+        <div id="grid">
+            <div>
+                <ol style="padding-bottom: 5px">
+                    <li><a href="1.html">HTML</a></li>
+                    <li><a href="2.html">CSS</a></li>
+                    <li><a href="3.html">JavaScript</a></li>
+                    <div class="line"></div>
+                </ol>
+                <ul style="padding-top: 5px">
+                    <li><a href="calculation.html">계산기</a></li>
+                    <li><a href="dice.html">주사위</a></li>
+                </ul>
+            </div>
+            <div id="article">
+                <h2>About Dice</h2>
+                <p>
+                    주사위는 놀이 도구의 하나로서, 일정 숫자에서 무작위로 선택된 어떤 결과를
+                    얻고자 할 때 사용되는 장난감이다. 정다면체의 각각의 면에 임의의 숫자나 눈 등등
+                    결과 값으로 얻고 싶은 후보가 되는 것들을 표시한 뒤 공중에 던져, 바닥에 떨어졌을 때
+                    보이는 것(주로 윗면만)이 결과가 된다. 정육면체 모양의 주사위 한 개를 던졌을 때
+                    나오는 경우의 수는 6가지며 특정 면이 나올 확률은 1/6이다.
+                </p>
+            </div>
+            <div style="margin-left: 42vw;">
+                <button class="dicy" onclick = "randice(this);">R0LL!</button>
+                <img src="D20.png" width="30%">
+            </div>
+        </div>
+    <input type="button" id="theme" value="night" style="float: right;" onclick = "
+        nightDayHandler(this);
+        ">
+    </body>
+</html>

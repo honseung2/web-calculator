@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+a {
+    color:orange;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 2px solid gray;
+    margin: 0px;
+    padding: 20px;
+}
+.line{
+    margin-top: 10px;
+    padding: 0px;
+    opacity: 80%;
+    border-top: 2px dashed darkgray;
+}
+#grid ol{
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 33px;
+    padding-bottom: 5px;
+}
+#grid ul{
+    list-style-type: square;
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 33px;
+    padding-bottom: 5px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#article {
+    padding-left: 25px;
+}
+@media(max-width: 700px) {
+    #grid {
+        display: block;
+    }
+    #grid ol {
+        border-right: none;
+    }
+    #grid ul {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
+#theme {
+    cursor: pointer;
+    width : 50px;
+    padding: 5px;
+    background-color:lightslategray;
+    border-radius: 5px;
+    font-size: 15px;
+    color:azure
+}
+.calcu{
+    background-color: gainsboro;
+    border-spacing: 0.3em; 
+    margin: 10px auto;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+tr {
+    text-align: center;
+}
+td {
+    color: black;
+    padding: 10px 15px;
+    position: relative;
+    bottom: 3px;
+}
+input[type="text"] {
+    height: 25px;
+    position: relative;
+    top: 5px;
+    text-align: right;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.oper{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.oper:active {
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
+    right: 0.1em;
+}
+.clr {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+.clr:active {
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
+    left: 0.1em;
+}
+.num {
+    cursor: pointer;
+    background-color: white;
+    margin: 10px;
+}
+.num:active {
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
+    left: 0.1em;
+}
+.dicy {
+    margin: 0;
+    cursor: pointer;
+    width : 15rem;
+    padding: 10px;
+    background-color:rgb(192, 198, 255);
+    font-size: 15px;
+    color:rgb(0, 102, 255)
+}

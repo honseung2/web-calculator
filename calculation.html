@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Room_calculator</title>
+        <meta charset="utf-8">
+        <script src ="functions.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <input type="button" id="theme" value="night" onclick = "
+            nightDayHandler(this);
+        ">
+        <h1><a href="index.html">WEB</a></h1>
+        <div id="grid">
+            <div>
+                <ol style="padding-bottom: 5px">
+                    <li><a href="1.html">HTML</a></li>
+                    <li><a href="2.html">CSS</a></li>
+                    <li><a href="3.html">JavaScript</a></li>
+                    <div class="line"></div>
+                </ol>
+                <ul style="padding-top: 5px">
+                    <li><a href="calculation.html">계산기</a></li>
+                    <li><a href="dice.html">주사위</a></li>
+                </ul>
+            </div>
+            <div id="article">
+                <h2>About Calculator</h2>
+                <p>
+                    전자계산기(電子計算器) 또는 계산기(計算器·計算機, 영어: electronic calculator, 문화어: 전자수판)는
+                    어떠한 사칙 연산을 포함한 계산이나 여러 공학적 계산을 수행하는 장치이자
+                    정보처리 시스템(Electronic Data Processing System; EDPS)이다.
+                    기계적인 방식이나 간단한 장치로만 되어있는 것에서부터 컴퓨터와 같은 복잡한 것까지 그 종류는 다양하다.
+                </p>
+            </div>
+        </div>
+        <form name="forms">
+        <table class="calcu"> 
+                <td colspan="4">
+                    <input type="text" class="result" name="result" readonly>
+                </td>
+            <tr>
+                <td colspan="3" class="clr" value="C" onclick="document.forms.result.value=''">C</td>
+                <td class="oper" value="+" onclick="document.forms.result.value+='+'">+</td>  
+            </tr>
+            <tr> 
+                <td class="num" value="7" onclick="document.forms.result.value+='7'">7</td> 
+                <td class="num" value="8" onclick="document.forms.result.value+='8'">8</td> 
+                <td class="num" value="9" onclick="document.forms.result.value+='9'">9</td> 
+                <td class="oper" value="-" onclick="document.forms.result.value+='-'">-</td> 
+            </tr>
+            <tr> 
+                <td class="num" value="4" onclick="document.forms.result.value+='4'">4</td> 
+                <td class="num" value="5" onclick="document.forms.result.value+='5'">5</td> 
+                <td class="num" value="6" onclick="document.forms.result.value+='6'">6</td> 
+                <td class="oper" value="×" onclick="document.forms.result.value+='*'">×</td> 
+            </tr> 
+            <tr> 
+                <td class="num" value="1" onclick="document.forms.result.value+='1'">1</td> 
+                <td class="num" value="2" onclick="document.forms.result.value+='2'">2</td> 
+                <td class="num" value="3" onclick="document.forms.result.value+='3'">3</td> 
+                <td class="oper" value="÷" onclick="document.forms.result.value+='/'">÷</td> 
+            </tr> 
+            <tr> 
+                <td colspan="2" class="num" value="0" onclick="document.forms.result.value+='0'">0</td> 
+                <td class="num" value="." onclick="document.forms.result.value+='.'">.</td>
+                <td class="oper" value="＝" onclick="document.forms.result.value=eval(document.forms.result.value)">＝</td> 
+            </tr>
+        </table> 
+        </form>
+    <input type="button" id="theme" value="night" style="float: right;" onclick = "
+        nightDayHandler(this);
+        ">
+    </body>
+</html>
