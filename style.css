@@ -124,7 +124,7 @@ input:focus{
     position: relative;
     left: 0.1em;
 }
-.dicy {
+.rollbox {
     margin: 0;
     cursor: pointer;
     width : 15rem;

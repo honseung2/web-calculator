@@ -41,31 +41,31 @@
                     <input type="text" class="result" name="result" readonly>
                 </td>
             <tr>
-                <td colspan="3" class="clr" value="C" onclick="document.forms.result.value=''">C</td>
-                <td class="oper" value="+" onclick="document.forms.result.value+='+'">+</td>  
+                <td colspan="3" class="clr" onclick="clrScreen()">C</td>
+                <td class="oper" onclick="clickPlus()">+</td>  
             </tr>
             <tr> 
-                <td class="num" value="7" onclick="document.forms.result.value+='7'">7</td> 
-                <td class="num" value="8" onclick="document.forms.result.value+='8'">8</td> 
-                <td class="num" value="9" onclick="document.forms.result.value+='9'">9</td> 
-                <td class="oper" value="-" onclick="document.forms.result.value+='-'">-</td> 
+                <td class="num" onclick="clickNumber('7')">7</td> 
+                <td class="num" onclick="clickNumber('8')">8</td> 
+                <td class="num" onclick="clickNumber('9')">9</td> 
+                <td class="oper" onclick="clickMinus()">-</td> 
             </tr>
             <tr> 
-                <td class="num" value="4" onclick="document.forms.result.value+='4'">4</td> 
-                <td class="num" value="5" onclick="document.forms.result.value+='5'">5</td> 
-                <td class="num" value="6" onclick="document.forms.result.value+='6'">6</td> 
-                <td class="oper" value="×" onclick="document.forms.result.value+='*'">×</td> 
+                <td class="num" onclick="clickNumber('4')">4</td> 
+                <td class="num" onclick="clickNumber('5')">5</td> 
+                <td class="num" onclick="clickNumber('6')">6</td> 
+                <td class="oper" onclick="clickMulti()">×</td> 
             </tr> 
             <tr> 
-                <td class="num" value="1" onclick="document.forms.result.value+='1'">1</td> 
-                <td class="num" value="2" onclick="document.forms.result.value+='2'">2</td> 
-                <td class="num" value="3" onclick="document.forms.result.value+='3'">3</td> 
-                <td class="oper" value="÷" onclick="document.forms.result.value+='/'">÷</td> 
+                <td class="num" onclick="clickNumber('1')">1</td> 
+                <td class="num" onclick="clickNumber('2')">2</td> 
+                <td class="num" onclick="clickNumber('3')">3</td> 
+                <td class="oper" onclick="clickDivid()">÷</td> 
             </tr> 
             <tr> 
-                <td colspan="2" class="num" value="0" onclick="document.forms.result.value+='0'">0</td> 
-                <td class="num" value="." onclick="document.forms.result.value+='.'">.</td>
-                <td class="oper" value="＝" onclick="document.forms.result.value=eval(document.forms.result.value)">＝</td> 
+                <td colspan="2" class="num" onclick="clickNumber('0')">0</td> 
+                <td class="num" onclick="clickNumber('.')">.</td>
+                <td class="oper" onclick="clickEqual()">＝</td> 
             </tr>
         </table> 
         </form>
